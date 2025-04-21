@@ -18,6 +18,17 @@ h1, h2, h3, h4 {
     background-color: #33432d !important; /* Darker green shade */
 }
 
+/* Bootstrap offcanvas by default is width: 400px, so this new media query will only change it when the screen is narrower.*/
+@media (max-width: 768px) {
+    .offcanvas-end {
+      width: 60% !important;
+    }
+  }
+
+/* Hover effect for nav links */
+.nav-link:hover {
+    background-color: #33432d !important; /* Light gray or any hover color you like */
+}
 
 /* Section: Carousel */
 #myCarousel .carousel-item img {
