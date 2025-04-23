@@ -73,13 +73,16 @@ $(document).ready(function(){
             about_me_text_5: "French to Spanish / Catalan",
             achievements: "Achievement",
             ach_text_1: "Translation of a book:",
-            ach_text_2: "Subtitling in Spanish of the first season of the series Murder, She Wrote for Prime Video.",
+            ach_text_2: "Subtitling in Spanish of the first season of the series <i>Murder, She Wrote</i> for Prime Video.",
             cust_text_1: "Sara is a talented translator who is able to deliver accurate and culturally appropriate translations. She is a pleasure to work with and always goes above and beyond to ensure client satisfaction.",
             cust_name_1: "Elizabeth D’Alessandro",
             cust_comp_1: "Smartphotography",
             cust_text_2: "Sara has been our contact for several years now when we need high-quality translations into Spanish. For Threema, she translates various website content and texts for the admin console of our Threema Work business app, among other things. She also helps us with proofreading and post-editing, always punctually and reliably.",
             cust_name_2: "Threema",
             cust_comp_2: "https://threema.ch/en",
+            cust_text_3: "The translation service was excellent – fast, precise, and professional. The text was flawlessly and stylistically adapted into three languages within a very short timeframe. I am extremely satisfied and can fully recommend SNTranslations.",
+            cust_name_3: "M. Ameseder",
+            cust_comp_3: "Schlatter Industries AG",
             contact_title: "Get in touch",
             contact_text: "I'm always on the lookout to work with new clients. If you're interested in working with me, please get in touch in one of the following ways.",
             address_title: "Address",
@@ -126,20 +129,23 @@ $(document).ready(function(){
             service_text_4: "Como correctora y redactora profesional, ofrezco servicios especializados para mejorar el contenido escrito.",
             my_story: "Mi historia",
             about_me_h: "Sobre mí",
-            about_me_text_1: "Soy traductora autónoma certificada desde 2017. Mi pasión por los idiomas y las culturas hacen que mis traducciones sean precisas y culturalmente apropiadas para mis clientes. Cuento con un grado en Traducción e Interpretación, con especialización en textos técnicos y científicos. Soy traductora autónoma certificada desde 2017. Mi pasión por los idiomas y las culturas me permite ofrecer traducciones precisas y culturalmente apropiadas para mis clientes.",
+            about_me_text_1: "Soy traductora autónoma certificada desde 2017. Mi pasión por los idiomas y las culturas hacen que mis traducciones sean precisas y culturalmente apropiadas para mis clientes. Cuento con un grado en Traducción e Interpretación, con especialización en textos técnicos y científicos. Soy traductora autónoma certificada desde 2017.",
             about_me_text_2: "Además, tengo un máster en Traducción Audiovisual, que abarca subtitulado, doblaje y localización. Mis traducciones de localización no solo son compatibles con SEO, sino que también son sensibles a las diferencias culturales, lo que garantiza que el sitio web conecte de forma eficaz con el público objetivo. Mis combinaciones de idiomas son las siguientes:",
             about_me_text_3: "inglés a español / catalán",
             about_me_text_4: "alemán a español / catalán",
             about_me_text_5: "francés a español / catalán",
             achievements: "Logros",
             ach_text_1: "Traducción de un libro:",
-            ach_text_2: "Subtitulado al español de la primera temporada de la serie Se ha escrito un crimen para Prime Video.",
+            ach_text_2: "Subtitulado al español de la primera temporada de la serie <i>Se ha escrito un crimen</i> para Prime Video.",
             cust_text_1: "Sara es una traductora con talento capaz de entregar traducciones precisas y culturalmente apropiadas. Es un placer trabajar con ella y siempre va más allá para garantizar la satisfacción del cliente.",
             cust_name_1: "Elizabeth D'Alessandro",
             cust_comp_1: "Smartphotography",
             cust_text_2: "Sara es nuestro contacto desde hace años cuando necesitamos traducciones de alta calidad al español. Traduce para Threema diversos contenidos de la web y textos para la consola de administración de nuestra app para empresas Threema Work, entre otras tareas. También nos ayuda con la corrección y la postedición, siempre de forma rápida y eficiente.",
             cust_name_2: "Threema",
             cust_comp_2: "https://threema.ch/es",
+            cust_text_3: "El servicio de traducción fue excelente: rápido, preciso y profesional. El texto se tradujo de manera impecable y con estilo a tres idiomas en muy poco tiempo. Estoy sumamente satisfecho y puedo recomendar SNTranslations sin ninguna reserva.",
+            cust_name_3: "M. Ameseder",
+            cust_comp_3: "Schlatter Industries AG",
             contact_title: "Contacto",
             contact_text: "Ponte en contacto conmigo si deseas trabajar conmigo o si necesitas más información sobre mis servicios. ",
             address_title: "Dirección",
@@ -199,6 +205,9 @@ $(document).ready(function(){
             cust_text_2: "Sara ist bereits seit mehreren Jahren unsere Ansprechpartnerin, wenn wir qualitative Übersetzungen ins Spanische benötigen. Für Threema übersetzt sie unter anderem verschiedene Website-Inhalte und Texte für die Admin-Konsole unserer Business-App Threema Work. Auch bei Korrektoraten und Post-Editing ist sie uns behilflich, stets zeitnah und zuverlässig.",
             cust_name_2: "Threema",
             cust_comp_2: "https://threema.ch/de",
+            cust_text_3: "Die Übersetzungsdienstleistung war hervorragend – schnell, präzise und professionell. Innerhalb kürzester Zeit wurde der Text einwandfrei und stilistisch in drei Sprachen passend übertragen. Ich bin äußerst zufrieden und kann SNTranslations uneingeschränkt weiterempfehlen.",
+            cust_name_3: "M. Ameseder",
+            cust_comp_3: "Schlatter Industries AG",
             contact_title: "Get in touch",
             contact_text: "I'm always on the lookout to work with new clients. If you're interested in working with me, please get in touch in one of the following ways.",
             address_title: "Address",
@@ -232,7 +241,7 @@ document.querySelectorAll(".dropdown-item").forEach(item => {
         // Update all elements with data-i18n attribute
         document.querySelectorAll("[data-i18n]").forEach(el => {
             const translation = translations[selectedLang][el.getAttribute("data-i18n")];
-            el.textContent = translation || el.textContent; // Fallback if translation is missing
+            el.innerHTML = translation || el.innerHTML; // Use innerHTML instead of textContent
         });
     });
 });   
