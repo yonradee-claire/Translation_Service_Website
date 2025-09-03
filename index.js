@@ -37,6 +37,18 @@ $(document).ready(function(){
   console.log("Slick initialized:", typeof $.fn.slick);
 });
 
+//Start of Tawk.to Script
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6818e89f5510d619105dc436/1iqgkpc0r';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+
+
     const translations = {
         en: {
             brand: "Sara",
@@ -166,40 +178,41 @@ $(document).ready(function(){
         },
         de: {
             brand: "Sara",
-            services: "Dienstleistungen",
+            services: "Was ich anbiete",
             about: "Über mich",
             reviews: "Bewertungen",
             contact: "Kontakt",
             language: "Sprache",
-            carousel_title_1: "Sara Noriega Turatti Übersetzungen",
-            carousel_text_1: "Übersetzung, Lektorat und Texterstellung",
-            carousel_text_2: "Zertifizierte professionelle Übersetzerin seit 2017",
+            carousel_title_1: "Sara Noriega Turatti Translations",
+            carousel_text_1: "Übersetzungs-, Korrektur- und Schreibdienstleistungen",
+            carousel_text_2: "Zertifizierte Übersetzerin seit 2017",
             about_me: "Über mich",
             achievements: "Erfolge",
-            carousel_title_2: "Unlock a world of precision and clarity with specialized translation services.",
-            carousel_text_3: "As a professional linguist, I bring expertise in technical, scientific, and audiovisual domains, bringing language gaps seamlessly. Let words transcend borders.",
-            contact_me: "Contact Me",
-            carousel_title_3: "Kind words from my customers.",
-            carousel_text_4: "See what my customers said about my work!",
-            reviews: "Reviews",
-            service_title_1: "Literary Translations",
-            service_text_1: "I offer high-quality literary translations for books, articles, and other literary works. My translations capture the essence of the original text and convey the intended message to the target audience.",
-            service_title_2: "Technical & Scientific Translations",
-            service_text_2: "I provide accurate and reliable translations  for technical and scientific documents, including manuals, articles and whitepapers.",
-            service_title_3: "Audiovisual Translation & Localization",
-            service_text_3: "I specialize in the field of audiovisual translation, including subtitling, dubbing, website translation, and video game localization, covering product descriptions, about pages, and other web content.",
-            service_title_4: "Proofreading & copywriting",
-            service_text_4: "As a professional proofreader and copywriter, I offer specialized services in enhancing written content.",
-            about_me: "About Me",
-            about_me_text_1: "I am a certified freelance translator since 2017. My passion for languages and cultures drives me to provide accurate and culturally appropriate translations for my clients. I have a Bachelor’s degree in Translation and Interpreting, with a specialization in technical and scientific contexts.",
-            about_me_text_2: "Additionally, I hold a Master’s degree in Audiovisual Translation, including subtitling, dubbing, and localisation. My translations are not only SEO-friendly but also culturally sensitive, ensuring that the website effectively connects with the target audience. My language combinations are as follows:",
-            about_me_text_3: "English to Spanish / Catalan",
-            about_me_text_4: "English to Spanish / Catalan",
-            about_me_text_5: "English to Spanish / Catalan",
-            achievements: "Achievement",
-            ach_text_1: "Translation of a book:",
-            ach_text_2: "Subtitling in Spanish of the first season of the series Murder, She Wrote for Prime Video.",
-            cust_text_1: "Sara ist eine talentierte Übersetzerin, die in der Lage ist, genaue und kulturell angemessene Übersetzungen zu liefern. Es ist ein Vergnügen, mit ihr zu arbeiten, und sie setzt sich stets für die Zufriedenheit ihrer Kunden ein.",
+            carousel_title_2: "KOMMUNIZIERE MIT DER WELT",
+            carousel_text_3: "Erschliesse dich einer Welt der Präzision und Klarheit mit spezialisierten Übersetzungsdienstleistungen. Ich bin Expertin und bringe fachliche Kenntnisse in technischen, wissenschaftlichen und audiovisuellen Bereichen mit. Lass Worte Grenzen überwinden und Sprachbarrieren der Vergangenheit angehören.",
+            contact_me: "Kontakt",
+            carousel_title_3: "Nette Worte von meinen Kunden",
+            carousel_text_4: "Was meine Kunden über mich sagen!",
+            reviews: "Bewertungen",
+            service_title_1: "Literarische Übersetzungen",
+            service_text_1: "Ich biete hochwertige Übersetzungen für Bücher, Artikel und andere literarische Texte an. Meine Arbeit erfasst die Essenz des Originaltextes und vermittelt die beabsichtigte Botschaft an die Zielgruppe.",
+            service_title_2: "Technische und wissenschaftliche Übersetzungen",
+            service_text_2: "Ich bin Expertin für präzisen Übersetzungen von technischen und wissenschaftlichen Dokumenten, einschliesslich Handbücher, Artikel und Whitepapers.",
+            service_title_3: "Audiovisuelle Übersetzung und Lokalisierung",
+            service_text_3: "Ich bin auf audiovisuelle Übersetzungen spezialisiert, mit Fokus auf auf Untertitelung, Synchronisation, Website-Übersetzungen und Videospiellokalisierung. Dazu gehören Übersetzungen von Produktbeschreibungen und anderen Webinhalten.",
+            service_title_4: "Korrekturlesen und Copywriting",
+            service_text_4: "Als professionelle Korrektorin biete ich spezialisierte Dienstleistungen zur Verbesserung schriftlicher Inhalte an.",
+            my_story: "Meine Geschichte",
+            about_me: "Über mich",
+            about_me_text_1: "Ich bin seit 2017 zertifizierte, freiberufliche Übersetzerin. Meine Leidenschaft für Sprachen und Kulturen treibt mich an, meinen Kunden genaue und kulturell sowie inhaltlich passende Übersetzungen zu liefern. Ich habe einen Bachelorabschluss in << Übersetzen und Dolmetschen >> mit einer Spezialisierung in technischen und wissenschaftlichen Texten.",
+            about_me_text_2: "Darüber hinaus habe ich einen Masterabschluss in audiovisueller Übersetzung, einschliesslich Untertitelung, Synchronisation und Lokalisierung. Meine Übersetzungen sind nicht nur SEO-freundlich, sondern auch und sichergestellt ist, dass die Website effektiv mit der Zielgruppe in Kontakt tritt. Meine Sprachkombinationen sind wie folgt:",
+            about_me_text_3: "Englisch > Spanisch/Katalanisch",
+            about_me_text_4: "Deutsch > Spanisch/Katalanisch",
+            about_me_text_5: "Französisch > Spanisch/Katalanisch",
+            achievements: "Erfolge:",
+            ach_text_1: "Übersetzung eines Buches:",
+            ach_text_2: "Untertitelung der ersten Staffel der Serie Mord ist ihr Hobby für Prime Video auf Spanisch.",
+            cust_text_1: "Sara ist eine talentierte Übersetzerin, die präzise Übersetzungen liefert. Es ist eine Freude, mit ihr zusammenzuarbeiten, und sie scheut keine Mühen, um die Kundenzufriedenheit sicherzustellen.",
             cust_name_1: "Elizabeth D'Alessandro",
             cust_comp_1: "Smartphotography",
             cust_text_2: "Sara ist bereits seit mehreren Jahren unsere Ansprechpartnerin, wenn wir qualitative Übersetzungen ins Spanische benötigen. Für Threema übersetzt sie unter anderem verschiedene Website-Inhalte und Texte für die Admin-Konsole unserer Business-App Threema Work. Auch bei Korrektoraten und Post-Editing ist sie uns behilflich, stets zeitnah und zuverlässig.",
@@ -208,23 +221,23 @@ $(document).ready(function(){
             cust_text_3: "Die Übersetzungsdienstleistung war hervorragend – schnell, präzise und professionell. Innerhalb kürzester Zeit wurde der Text einwandfrei und stilistisch in drei Sprachen passend übertragen. Ich bin äußerst zufrieden und kann SNTranslations uneingeschränkt weiterempfehlen.",
             cust_name_3: "M. Ameseder",
             cust_comp_3: "Schlatter Industries AG",
-            contact_title: "Get in touch",
-            contact_text: "I'm always on the lookout to work with new clients. If you're interested in working with me, please get in touch in one of the following ways.",
+            contact_title: "Kontaktiere mich",
+            contact_text: "Wenn du an einer Zusammenarbeit mit mir interessiert bist, kontaktiere mich bitte auf einem der folgenden Wege.",
             address_title: "Address",
             address_text: "Seehaldenstrasse 99, 8800 Thalwil, Switzerland",
-            phone: "Phone",
-            e_mail: "E-mail",
+            phone: "Telefon",
+            e_mail: "E-Mail",
             opening_hours: "LinkedIn",
-            opening_hours_days1: "Mon - Fri",
-            opening_hours_days2: "Sat - Sun",
-            opening_hours_time1: "9am - 5pm",
-            opening_hours_time2: "9am - 2pm",
-            Tag_FullName: "Full Name",
+            opening_hours_days1: "Mo - Fr",
+            opening_hours_days2: "Sa - So",
+            opening_hours_time1: "9h - 17h",
+            opening_hours_time2: "9h - 14h",
+            Tag_FullName: "Name",
             Tag_Email: "Email",
-            Tag_Phone: "Phone Number",
-            Tag_Subject: "Subject",
-            Tag_Message: "Message",
-            Send_Message: "Send Message"
+            Tag_Phone: "Telefonnummer",
+            Tag_Subject: "Betreff",
+            Tag_Message: "Nachricht",
+            Send_Message: "Nachricht senden"
         }
     };
 
